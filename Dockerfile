@@ -35,7 +35,7 @@ RUN mkdir /tshock /terraria && chown terraria /tshock /terraria
 # Download the latest version of TShock
 #ADD https://api.github.com/repos/NyxStudios/TShock/zipball/ /tmp/tshock.zip
 # can't use api github because there is an api limit
-ADD https://github.com/NyxStudios/TShock/releases/download/v4.3.9/tshock_4.3.9.zip /tmp/tshock.zip
+ADD https://github.com/Pryaxis/TShock/releases/download/v4.3.24/tshock_4.3.24.zip /tmp/tshock.zip
 RUN unzip -d /tshock /tmp/tshock.zip
 # Allow to save default plugin and add them when we mount ServerPlugins
 RUN cp -r /tshock/ServerPlugins /tshock/DefaultServerPlugins 
